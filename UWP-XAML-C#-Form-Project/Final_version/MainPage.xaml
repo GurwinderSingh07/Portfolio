@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="Final_version.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Final_version"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="-15,0,15,0">
+        <TextBlock HorizontalAlignment="Left" Margin="250,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"><Run FontWeight="Bold" Text="Username"/></TextBlock>
+        <TextBox x:Name="u_input" HorizontalAlignment="Left" Margin="404,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="33" Width="235" TextChanged="u_input_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="251,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"><Run FontWeight="Bold" Text="Password"/></TextBlock>
+        <PasswordBox x:Name="p_input" HorizontalAlignment="Left" Margin="404,226,0,0" VerticalAlignment="Top" Height="38" Width="235"/>
+        <TextBlock HorizontalAlignment="Left" Margin="252,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"><Run FontWeight="Bold" Text="Gender"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="252,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"><Run FontWeight="Bold" Text="Payment Options"/></TextBlock>
+        <RadioButton x:Name="male" Content="Male" Margin="451,306,0,0" VerticalAlignment="Top" GroupName="gender"/>
+        <RadioButton x:Name="female" Content="Female" Margin="630,306,0,0" VerticalAlignment="Top" GroupName="gender"/>
+        <RadioButton x:Name="cd" Content="Credit/Debit Card" Margin="449,396,0,0" VerticalAlignment="Top" GroupName="po"/>
+        <RadioButton x:Name="pp" Content="PayPal" Margin="846,399,0,0" VerticalAlignment="Top" GroupName="po"/>
+        <RadioButton x:Name="nb" Content="NetBanking" Margin="636,400,0,0" VerticalAlignment="Top" GroupName="po"/>
+        <CheckBox x:Name="check" Content="" Margin="404,503,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="446,506,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="461" FontSize="18"><Run FontWeight="Bold" Text="I agree to the Term &amp; Conditions"/></TextBlock>
+        <Button Content="SIgn up" Margin="249,583,0,0" VerticalAlignment="Top" Height="35" Width="111" FontWeight="Bold" Click="Button_Click"/>
+        <Button Content="Reset" Margin="468,583,0,0" VerticalAlignment="Top" Height="35" Width="116" FontWeight="Bold" Click="Button_Click_1"/>
+        <Button Content="Close" Margin="675,583,0,0" VerticalAlignment="Top" Height="35" Width="122" FontWeight="Bold" Click="Button_Click_2"/>
+        <Button x:Name="show_password" Content="Show Password" Margin="723,231,0,0" VerticalAlignment="Top" Height="32" Width="124" FontWeight="Bold" Click="show_password_Click"/>
+        <TextBox x:Name="s_p_box" HorizontalAlignment="Left" Margin="906,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="131"/>
+
+    </Grid>
+</Page>
